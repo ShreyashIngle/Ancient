@@ -30,7 +30,17 @@
                     <div class="hero-content">
                         <h2>Journey Through Time</h2>
                         <p>Discover the wonders of Ancient Egypt, where gods walked among men and pharaohs built monuments to eternity.</p>
-                        <button class="cta-button">Begin Your Odyssey</button>
+                        <button class="cta-button" onclick="scrollDown()">Begin Your Odyssey</button>
+                        <script>
+                            function scrollDown() {
+                              window.scrollBy({
+                                top: 300, // change this value to scroll more or less
+                                left: 0,
+                                behavior: 'smooth'
+                              });
+                            }
+                          </script>
+                          
                     </div>
                     <div class="hero-image">
                         <img src="/images/image1.webp" alt="Pyramids at Dawn">
@@ -68,10 +78,36 @@
                     <h3 class="section-title">𓂀𓃹𓈖𓏏𓏭𓀾 A Civilization Eternal 𓀾𓏭𓏏𓈖𓃹𓂀</h3>
                     <div class="history-content">
                         <div class="history-text">
-                            <p>For over 3,000 years, the Nile's fertile banks nurtured one of history's most magnificent civilizations. From the first dynasties of Narmer to the golden age of Ramses II, Egypt's legacy shaped the ancient world.</p>
-                            <p>Our ancestors built not with mere stone, but with divine purpose. Each monument, each hieroglyph, each ritual connects us to the eternal cycle of life, death, and rebirth.</p>
-                            <button class="learn-more">Learn the Sacred Rites</button>
+                            <p>
+                                For over 3,000 years, the Nile's fertile banks nurtured one of history's most magnificent civilizations.
+                                From the first dynasties of Narmer to the golden age of Ramses II, Egypt's legacy shaped the ancient world.
+                            </p>
+                            <p>
+                                Our ancestors built not with mere stone, but with divine purpose.
+                                Each monument, each hieroglyph, each ritual connects us to the eternal cycle of life, death, and rebirth.
+                            </p>
+                            <button class="learn-more" onclick="toggleSacredRites()">Learn the Sacred Rites</button>
+                            <div id="sacred-rites-content" style="display: none; margin-top: 1rem;">
+                                <p>
+                                    Sacred rites in ancient Egypt were more than ceremonial—they were keys to cosmic harmony.
+                                    Each rite followed strict rituals invoking gods like Osiris, Anubis, and Ma’at to ensure balance in both life and the afterlife.
+                                </p>
+                                <ul>
+                                    <li><strong>Opening of the Mouth:</strong> A funerary ritual to restore the deceased’s senses in the afterlife</li>
+                                    <li><strong>Daily Temple Rituals:</strong> Performed by priests to honor deities, bathe statues, and offer food</li>
+                                    <li><strong>Festival of Opet:</strong> A grand procession celebrating the union of Amun, Mut, and Khonsu</li>
+                                    <li><strong>Purification Rites:</strong> Involving sacred water and incense to cleanse spaces and individuals</li>
+                                </ul>
+                            </div>
                         </div>
+                        
+                        <script>
+                          function toggleSacredRites() {
+                            const content = document.getElementById("sacred-rites-content");
+                            content.style.display = content.style.display === "none" ? "block" : "none";
+                          }
+                        </script>
+                        
                         <div class="history-image">
                             <img src="/images/image2.avif" alt="Ancient Egyptian Art">
                         </div>
