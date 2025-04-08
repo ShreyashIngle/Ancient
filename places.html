@@ -34,44 +34,115 @@
                 <section class="places-grid">
                     <div class="place-card">
                         <div class="place-image">
-                            <img src="https://via.placeholder.com/350x250/cc9900/000000?text=Great+Pyramid" alt="Great Pyramid">
+                            <img src="images/image3.avif" alt="Great Pyramid">
                             <div class="place-overlay">
                                 <h3>Great Pyramid of Giza</h3>
                             </div>
                         </div>
                         <div class="place-info">
-                            <p>Built for Pharaoh Khufu around 2560 BC, this monumental tomb stands as the last of the Seven Wonders of the Ancient World. Its perfect alignment with celestial bodies reveals the advanced astronomical knowledge of our ancestors.</p>
-                            <button class="place-button">Seek Guidance</button>
+                            <p>
+                                Built for Pharaoh Khufu around 2560 BC, this monumental tomb stands as the last of the Seven Wonders of the Ancient World.
+                                Its perfect alignment with celestial bodies reveals the advanced astronomical knowledge of our ancestors.
+                            </p>
+                            <button class="place-button" onclick="toggleGuidance()">Seek Guidance</button>
+                            <div id="guidance-content" style="display: none; margin-top: 1rem;">
+                                <p>
+                                    The Great Pyramid was not just a tomb—it was a testament to the ingenuity and spiritual beliefs of ancient Egyptians.
+                                    Scholars believe its construction involved a workforce of skilled laborers, and the structure was aligned precisely with
+                                    the cardinal points, possibly to serve religious or astronomical purposes.
+                                </p>
+                                <ul>
+                                    <li>Location: Giza Plateau, Egypt</li>
+                                    <li>Height: Originally 146.6 meters (481 feet)</li>
+                                    <li>Materials: Around 2.3 million blocks of limestone and granite</li>
+                                </ul>
+                            </div>
                         </div>
+                        
+                        <script>
+                          function toggleGuidance() {
+                            const content = document.getElementById("guidance-content");
+                            content.style.display = content.style.display === "none" ? "block" : "none";
+                          }
+                        </script>
+                        
                     </div>
 
                     <div class="place-card">
                         <div class="place-image">
-                            <img src="https://via.placeholder.com/350x250/996633/ffffff?text=Sphinx" alt="Sphinx">
+                            <img src="/images/image4.avif" alt="Sphinx">
                             <div class="place-overlay">
                                 <h3>The Great Sphinx</h3>
                             </div>
                         </div>
                         <div class="place-info">
-                            <p>This colossal limestone statue with the body of a lion and the head of a pharaoh (believed to be Khafre) guards the Giza plateau. Its missing nose remains one of Egypt's great mysteries, lost to time and speculation.</p>
-                            <button class="place-button">Seek Guidance</button>
+                            <p>
+                                This colossal limestone statue with the body of a lion and the head of a pharaoh (believed to be Khafre) guards the Giza plateau.
+                                Its missing nose remains one of Egypt's great mysteries, lost to time and speculation.
+                            </p>
+                            <button class="place-button" onclick="toggleSphinxGuidance()">Seek Guidance</button>
+                            <div id="sphinx-guidance-content" style="display: none; margin-top: 1rem;">
+                                <p>
+                                    The Great Sphinx is thought to symbolize strength, wisdom, and royal power.
+                                    Carved directly from the bedrock, it is one of the largest and oldest monolithic statues in the world.
+                                    Theories about the missing nose range from Napoleon's troops using it for target practice to natural erosion.
+                                </p>
+                                <ul>
+                                    <li>Location: Giza Plateau, Egypt</li>
+                                    <li>Length: About 73 meters (240 feet)</li>
+                                    <li>Height: 20 meters (66 feet)</li>
+                                    <li>Material: Carved from a single piece of limestone</li>
+                                </ul>
+                            </div>
                         </div>
+                        
+                        <script>
+                          function toggleSphinxGuidance() {
+                            const content = document.getElementById("sphinx-guidance-content");
+                            content.style.display = content.style.display === "none" ? "block" : "none";
+                          }
+                        </script>
+                        
                     </div>
 
                     <div class="place-card">
                         <div class="place-image">
-                            <img src="https://via.placeholder.com/350x250/663300/ffffff?text=Karnak+Temple" alt="Karnak Temple">
+                            <img src="images/image5.avif" alt="Karnak Temple">
                             <div class="place-overlay">
                                 <h3>Temple of Karnak</h3>
                             </div>
                         </div>
                         <div class="place-info">
-                            <p>The largest religious building ever constructed, this vast temple complex in Thebes was built over 2,000 years. The Great Hypostyle Hall's 134 massive columns create a stone forest dedicated to Amun-Ra, king of the gods.</p>
-                            <button class="place-button">Seek Guidance</button>
+                            <p>
+                                The largest religious building ever constructed, this vast temple complex in Thebes was built over 2,000 years.
+                                The Great Hypostyle Hall's 134 massive columns create a stone forest dedicated to Amun-Ra, king of the gods.
+                            </p>
+                            <button class="place-button" onclick="toggleKarnakGuidance()">Seek Guidance</button>
+                            <div id="karnak-guidance-content" style="display: none; margin-top: 1rem;">
+                                <p>
+                                    The Karnak Temple complex was developed by generations of pharaohs and served as the heart of worship in ancient Egypt.
+                                    It reflects the power and devotion of rulers from the Middle Kingdom through to the Ptolemaic era.
+                                    The Hypostyle Hall is a marvel of engineering, with its towering columns covered in intricate hieroglyphs.
+                                </p>
+                                <ul>
+                                    <li>Location: Luxor (Ancient Thebes), Egypt</li>
+                                    <li>Main Deity: Amun-Ra</li>
+                                    <li>Column Count (Hypostyle Hall): 134</li>
+                                    <li>Construction Span: Over 2,000 years</li>
+                                </ul>
+                            </div>
                         </div>
+                        
+                        <script>
+                          function toggleKarnakGuidance() {
+                            const content = document.getElementById("karnak-guidance-content");
+                            content.style.display = content.style.display === "none" ? "block" : "none";
+                          }
+                        </script>
+                        
                     </div>
 
-                    <div class="place-card">
+                    <!-- <div class="place-card">
                         <div class="place-image">
                             <img src="https://via.placeholder.com/350x250/993300/ffffff?text=Abu+Simbel" alt="Abu Simbel">
                             <div class="place-overlay">
@@ -82,7 +153,7 @@
                             <p>Ramses II's monumental temples carved into mountainsides were relocated in a massive UNESCO operation to save them from Lake Nasser's rising waters. The inner sanctum illuminates precisely on the king's birthday and coronation day.</p>
                             <button class="place-button">Seek Guidance</button>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
 
                 <section class="video-section">
@@ -90,14 +161,24 @@
                     <div class="video-grid">
                         <div class="video-card">
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/9gD0K7oH92U" frameborder="0" allowfullscreen></iframe>
+                                <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/Xm5WyKzq_Eg?autoplay=1&si=_r-Eyq0YGk6o8pda"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                              </iframe>
+                              
                             </div>
                             <h4>Luxor Temple at Night</h4>
                             <p>Experience the sacred illumination rituals under the moon's glow.</p>
                         </div>
                         <div class="video-card">
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/mH1_4XJ6J3E" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CEl6P5wo6ro?autoplay=1&si=nLfWcch3fuLe1Ho6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                             <h4>Inside the Pyramids</h4>
                             <p>Venture where few have walked through hidden passages and chambers.</p>
